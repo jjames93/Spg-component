@@ -1,0 +1,27 @@
+body{
+    background-color: whitesmoke;
+}
+
+.grid{
+    display:grid;
+    grid-template-rows: 45% 55%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "join join"
+    "monthly why";
+}
+
+.join{
+ grid-area: join;
+ background-color: wheat;   
+}
+
+.month{
+    grid-area: monthly;
+    background-color: rgb(0, 225, 255);   
+   }
+
+.why{
+    grid-area: why;
+    background-color: rgb(4, 179, 179);   
+   }
