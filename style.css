@@ -3,7 +3,13 @@ body{
     font-family: 'Karla', sans-serif;
 }
 
-.grid{
+ul{
+    list-style-type: none;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 550px;
     /* display:grid;
     grid-template-rows: 45% 55%;
     grid-template-columns: 1fr 1fr;
@@ -12,12 +18,18 @@ body{
     "monthly why"; */
 }
 
+li{
+    border: none;
+    border-radius: 5px;
+    
+}
 .join{
  grid-area: join;
  background-color: rgb(224, 222, 217);   
  padding: 10px 10px 10px 40px;
- max-width: 550px;
- min-width: 225px;
+
+
+ 
 }
 
 .join h1{
