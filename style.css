@@ -36,6 +36,22 @@ section{
  border-radius: 5px;
  box-shadow: 0px 0px 15px 2px hsl(218, 26%, 58%);
 }
+
+.square{
+    padding: 25px; 
+}
+
+.month{
+    background-color: white;
+}
+
+.month{
+    background-color: teal ;
+}
+
+.why{
+    background-color: turquoise;
+}
     
 /*}
 .join{
