@@ -1,28 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: whitesmoke;
     font-family: 'Karla', sans-serif;
+    font-size: 16px;
 }
 
-ul{
-    list-style-type: none;
-    border: none;
-    border-radius: 5px;
+section{
+
     display: flex;
-    flex-wrap: wrap;
-    max-width: 550px;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(204, 43%, 93%);
+    padding: 120px 50px;
+}
     /* display:grid;
     grid-template-rows: 45% 55%;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
     "join join"
-    "monthly why"; */
-}
+    "monthly why"; 
+}*/
 
-li{
-    border: none;
-    border-radius: 5px;
-    
+.container{
+ display: grid;   
+ grid-template-columns: 100%;
+ max-width: 550px;
+ margin:0 auto;
+ border-radius: 5px;
+ box-shadow: 0px 0px 15px 2px hsl(218, 26%, 58%);
 }
+    
+/*}
 .join{
  grid-area: join;
  background-color: rgb(224, 222, 217);   
@@ -64,4 +79,4 @@ button{
     color: whitesmoke;
     border-radius: 5px;
     
-}
+} */
