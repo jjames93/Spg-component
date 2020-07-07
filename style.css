@@ -20,13 +20,7 @@ section{
     background-color: hsl(204, 43%, 93%);
     padding: 120px 50px;
 }
-    /* display:grid;
-    grid-template-rows: 45% 55%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-    "join join"
-    "monthly why"; 
-}*/
+
 
 .container{
  display: grid;   
@@ -41,58 +35,94 @@ section{
     padding: 25px; 
 }
 
-.month{
+.join{
     background-color: white;
 }
 
-.month{
-    background-color: teal ;
+ .join h2{
+    color: hsl(179, 62%, 43%);
+    margin-bottom: 20px;
+} 
+
+.join h3{
+    color: hsl(71, 73%, 54%);
+    margin-bottom: 15px;
 }
 
-.why{
-    background-color: turquoise;
+.join p{
+    margin-bottom: 5px;
+    color: hsl(218, 22%, 67%);
+    font-weight: 400;
+    line-height: 1.6;
 }
+
+.month{
+    background-color: hsl(179, 62%, 43%) ;
+}
+
+.month h3{
+    color:white;
+    margin-bottom: 20px;
+    font-weight: 700;
     
-/*}
-.join{
- grid-area: join;
- background-color: rgb(224, 222, 217);   
- padding: 10px 10px 10px 40px;
-
-
- 
+}
+.month p span{
+    font-weight: 700;
+    font-size: 30px;
+    color: white;
+    margin-right: 5px;
 }
 
-.join h1{
-    color: rgb(4, 179, 179);
+.month p{
+    color: hsl(204, 43%, 93%);
 }
 
-.join h2{
-    color: rgb(166, 199, 49);
-}
-
-.month{
-    grid-area: monthly;
-    background-color: rgb(4, 179, 179); 
-    color:  rgb(224, 222, 217);
-    padding: 10px 10px 10px 40px;
-    max-width: 225px;
-   }
-
-.why{
-    grid-area: why;
-    background-color: rgb(56, 204, 204);   
-    color:  rgb(224, 222, 217);
-    padding: 10px 10px 10px 40px;
-    max-width: 225px;
-   }
-
-button{
-    background-color: rgb(166, 199, 49);
-    padding: 10px 80px 10px 80px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
+.button{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-family: 'Karla';
+    font-size: 18px;
+    font-weight: 700;
+    background-color: hsl(71, 73%, 54%);
+    width: 100%;
+    display: inline-block;
     border-radius: 5px;
-    
-} */
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    box-shadow: 2px 2px 10px 2px hsl(199, 21%, 52%);
+}
+
+.why{
+    background-color: hsl(179, 43%, 53%);
+}
+
+.why h3{
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.why p{
+    color: hsl(204, 43%, 93%);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+@media only screen and (min-width: 750px){
+
+    .container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+      
+    }
+    .join{
+        grid-area: span 1 / span 2;
+    }
+    .month, .why{
+        grid-row: 2;
+    }
+
+}
